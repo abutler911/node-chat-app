@@ -49,6 +49,7 @@ button {
     font-size: 16px;
     transition: background .3s ease;
     border-radius: 5px;
+    width: 100%;
 }
 
 button:hover {
@@ -140,7 +141,7 @@ button:disabled {
 /* Message Composition Styles */
 
 .compose {
-    display: flex;
+    /* display: flex; */
     flex-shrink: 0;
     margin-top: 16px;
     padding: 24px;
@@ -150,38 +151,57 @@ button:disabled {
     display: flex;
     flex-grow: 1;
     margin-right: 16px;
+    display: block;
 }
 
 .compose input {
     border: 1px solid #eeeeee;
     width: 100%;
     padding: 12px;
-    margin: 0 16px 0 0;
-    flex-grow: 1;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .compose button {
     font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#send-location {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+
 }
 
 /* Chat Sidebar Styles */
 
 .room-title {
     font-weight: 400;
+    color: black;
     font-size: 22px;
     background: #2c2f3a;
     padding: 24px;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+    background-color: rgb(224, 224, 224);
 }
 
 .list-title {
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 4px;
-    padding: 12px 24px 0 24px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
 }
 
 .users {
     list-style-type: none;
     font-weight: 300;
     padding: 12px 24px 0 24px;
+    text-transform: capitalize;
 }
